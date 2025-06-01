@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Donate to Your NGO to support education, healthcare, and skill development for underprivileged communities. Make a difference today.">
+    <meta name="keywords" content="donate, charity, NGO, education, healthcare, skill development, non-profit, Your NGO">
+    <meta name="author" content="Your NGO">
+    <meta property="og:title" content="Donate to Your NGO">
+    <meta property="og:description" content="Your donation empowers communities through education, healthcare, and sustainable skill development.">
+    <meta property="og:image" content="images/og-image-donate.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Donate - Your NGO | Empowering Communities</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <link rel="stylesheet" href="donate.css" />
+</head>
+<body class="antialiased">
+    <header id="header">
+        <nav class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center" aria-label="Main Navigation">
+            <a href="index.html" class="flex items-center space-x-3" aria-label="Your NGO Home">
+                <img src="images/logo.png" alt="Your NGO Logo" class="h-12 sm:h-14 md:h-16 w-auto" loading="lazy" onerror="this.src='https://placehold.co/150x50/1E40AF/FFFFFF?text=Logo+Not+Found'; this.alt='Your NGO Logo - Placeholder'; console.error('Logo image not found at images/logo.png');">
+                <span class="ngo-name">Sahajshakti Sarvakalyaan Trust</span>
+            </a>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-500 rounded-lg p-2" aria-label="Toggle Mobile Menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <ul id="nav-links" class="hidden md:flex space-x-6 lg:space-x-8 items-center text-base">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About Us</a></li>
+                <li><a href="index.html#intervention" class="nav-link">Our Work</a></li>
+                <li><a href="index.html#impact" class="nav-link">Our Impact</a></li>
+                <li><a href="index.html#get-involved" class="nav-link">Get Involved</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                <li><a href="donate.html" class="block mx-4 my-3 px-6 py-3 animated-button text-center">Donate <i class="fas fa-heartbeat ml-2"></i></a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-xl rounded-b-lg" aria-hidden="true">
+            <a href="index.html#home" class="block px-6 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-600 rounded-t-lg">Home</a>
+            <a href="index.html#about" class="block px-6 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-600">About Us</a>
+            <a href="index.html#intervention" class="block px-6 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-600">Our Work</a>
+            <a href="index.html#impact" class="block px-6 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-600">Our Impact</a>
+            <a href="index.html#get-involved" class="block px-6 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-600">Get Involved</a>
+            <a href="index.html#contact" class="block px-6 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-600">Contact</a>
+            <a href="donate.html" class="block px-6 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-600 font-semibold bg-orange-50">Donate</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="donate-hero" aria-labelledby="donate-heading">
+            <div class="donate-hero-content">
+                <h1 id="donate-heading" class="hero-quote mb-6" data-aos="fade-up" data-aos-delay="100">Empower Change with Your Donation 🌟</h1>
+                <p class="hero-subquote mb-10" data-aos="fade-up" data-aos-delay="200">Your contribution fuels our mission to provide education, healthcare, and sustainable livelihoods to underprivileged communities.</p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#donate-form" class="animated-button" aria-label="Make a Donation Now">Donate Now <i class="fas fa-donate ml-2"></i></a>
+                    <a href="index.html#about" class="animated-button" aria-label="Learn More About Our Mission">Our Mission <i class="fas fa-book-open-reader ml-2"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="donation-packages" class="py-20 lg:py-28" aria-labelledby="packages-heading">
+            <div class="container mx-auto px-4 sm:px-6">
+                <h2 id="packages-heading" class="section-title" data-aos="fade-up">Choose a Donation Package <i class="fas fa-gift text-3xl ml-2 text-orange-500"></i></h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Support a child’s education with a plan that suits you.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                    <div class="package-card" data-amount="18000" data-aos="fade-up" data-aos-delay="100">
+                        <div class="package-amount">₹18,000</div>
+                        <div class="package-description">Sponsor a child’s education for</div>
+                        <div class="package-duration">12 Months</div>
+                    </div>
+                    <div class="package-card" data-amount="9000" data-aos="fade-up" data-aos-delay="200">
+                        <div class="package-amount">₹9,000</div>
+                        <div class="package-description">Sponsor a child’s education for</div>
+                        <div class="package-duration">6 Months</div>
+                    </div>
+                    <div class="package-card" data-amount="6000" data-aos="fade-up" data-aos-delay="300">
+                        <div class="package-amount">₹6,000</div>
+                        <div class="package-description">Sponsor a child’s education for</div>
+                        <div class="package-duration">4 Months</div>
+                    </div>
+                    <div class="package-card" data-amount="4500" data-aos="fade-up" data-aos-delay="400">
+                        <div class="package-amount">₹4,500</div>
+                        <div class="package-description">Sponsor a child’s education for</div>
+                        <div class="package-duration">3 Months</div>
+                    </div>
+                    <div class="package-card" data-amount="3000" data-aos="fade-up" data-aos-delay="500">
+                        <div class="package-amount">₹3,000</div>
+                        <div class="package-description">Sponsor a child’s education for</div>
+                        <div class="package-duration">2 Months</div>
+                    </div>
+                    <div class="package-card" data-amount="1500" data-aos="fade-up" data-aos-delay="600">
+                        <div class="package-amount">₹1,500</div>
+                        <div class="package-description">Sponsor a child’s education for</div>
+                        <div class="package-duration">1 Month</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="donate-form" class="py-20 lg:py-28" aria-labelledby="form-heading">
+            <div class="container mx-auto px-4 sm:px-6 max-w-3xl">
+                <h2 id="form-heading" class="section-title" data-aos="fade-up">Enter Your Details <i class="fas fa-user-edit text-3xl ml-2 text-indigo-600"></i></h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Fill in your information to proceed with your donation.</p>
+                <div id="selected-amount-box" class="selected-amount-box" data-aos="fade-up" data-aos-delay="200">
+                    <p>Your Donation Amount: <span id="selected-amount-display">₹0</span></p>
+                </div>
+                <div class="amount-box bg-gray-50 p-6 rounded-2xl shadow-xl" data-aos="fade-up" data-aos-delay="300">
+                    <form id="donation-form" class="form-group">
+                        <div class="mb-6">
+                            <label class="block text-lg font-semibold text-gray-800 mb-3">Or choose a different amount:</label>
+                            <div class="flex flex-wrap gap-4 justify-center">
+                                <button type="button" class="amount-button" data-amount="500">₹500</button>
+                                <button type="button" class="amount-button" data-amount="1000">₹1000</button>
+                                <button type="button" class="amount-button" data-amount="2000">₹2000</button>
+                                <button type="button" class="amount-button custom-select-button" data-amount="custom">Custom Amount</button>
+                            </div>
+                            <div id="custom-amount-input" class="custom-amount-input mt-3 hidden">
+                                <label for="custom_amount" class="block text-sm">Enter Custom Amount</label>
+                                <input type="number" id="custom_amount" name="custom_amount" data-field="custom_amount" min="100" class="mt-1 block w-full" placeholder="e.g., 7500">
+                            </div>
+                            <input type="hidden" id="selected_amount" name="selected_amount" data-field="selected_amount" value="">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-lg font-semibold text-gray-800 mb-3">Your Information</label>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="donor_name">Full Name</label>
+                                    <input type="text" name="donor_name" id="donor_name" data-field="donor_name" required>
+                                </div>
+                                <div>
+                                    <label for="donor_email">Email Address</label>
+                                    <input type="email" name="donor_email" id="donor_email" data-field="donor_email" required>
+                                </div>
+                                <div>
+                                    <label for="donor_phone">Phone Number (Optional)</label>
+                                    <input type="tel" name="donor_phone" id="donor_phone" data-field="donor_phone" placeholder="e.g., +91 9876543210">
+                                </div>
+                                <div>
+                                    <label for="donor_country">Country</label>
+                                    <input type="text" name="donor_country" id="donor_country" data-field="donor_country">
+                                </div>
+                                <div class="md:col-span-2">
+                                    <label for="donor_address">Address (Optional)</label>
+                                    <textarea name="donor_address" id="donor_address" data-field="donor_address" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="animated-button w-full">Proceed to Pay <i class="fas fa-arrow-right ml-2"></i></button>
+                        <p class="text-xs text-gray-500 mt-4 text-center">Your information is secure. We use trusted payment gateways.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-helps" class="py-20 lg:py-28" aria-labelledby="impact-heading">
+            <div class="container mx-auto px-4 sm:px-6">
+                <h2 id="impact-heading" class="section-title" data-aos="fade-up">How Your Donation Helps <i class="fas fa-hands-heart text-3xl ml-2 text-red-500"></i></h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Your support transforms lives in meaningful ways.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="package-card" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-child text-4xl text-orange-600 mb-4"></i>
+                        <div class="amount-amount"></div>
+                        <h3 class="text-xl font-semibold mb-2">Support Education</h3>
+                        <p class="text-gray-600">Provide books, uniforms, and tuition for children in need.</p>
+                    </div>
+                    <div class="package-card" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-stethoscope text-4xl text-green-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Fund Healthcare</h3>
+                        <div class="amount-amount"></div>
+                        <p class="text-gray-600">Organize medical camps and provide essential medicines.</p>
+                    </div>
+                    <div class="package-card" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-tools text-4xl text-blue-600 mb-4"></i>
+                        <div class="text-amount"></div>
+                        <h3 class="text-xl font-semibold mb-2">Enable Skills</h3>
+                        <p class="text-gray-600">Support vocational training for sustainable livelihoods.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-20 lg:py-28" aria-labelledby="faq-heading">
+            <div class="container mx-auto px-4 sm:px-6 max-w-4xl">
+                <h2 id="faq-heading" class="section-title" data-aos="fade-up">Frequently Asked Questions <i class="fas fa-question-circle text-3xl ml-2 text-indigo Lori-600"></i></h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Answers to common questions about donating.</p>
+                <div class="space-y-6">
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Is my donation tax-deductible?</h3>
+                        <p class="text-gray-600">Yes, your donation is tax-deductible to the extent allowed by law. You’ll receive a receipt.</p>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">How is my donation used?</h3>
+                        <p class="text-gray-600">Your donation directly supports our programs in education, healthcare, and skill development, with 95% going to beneficiaries.</p>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Can I donate monthly?</h3>
+                        <p class="text-gray-600">Yes, select a recurring donation package or contact us to set up monthly contributions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10 items-start">
+                <div class="text-center md:text-left" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-semibold text-white mb-3">Your NGO 🌍</h3>
+                    <p class="text-sm">Empowering communities through education, healthcare, and sustainable livelihoods since 1995.</p>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-semibold text-white mb-3">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#about" class="hover:text-orange-400">About Us</a></li>
+                        <li><a href="index.html#intervention" class="hover:text-orange-400">Our Work</a></li>
+                        <li><a href="index.html#impact" class="hover:text-orange-400">Impact</a></li>
+                        <li><a href="index.html#get-involved" class="hover:text-orange-400">Get Involved</a></li>
+                        <li><a href="donate.html" class="hover:text-orange-400 font-semibold">Donate</a></li>
+                        <li><a href="index.html#contact" class="hover:text-orange-400">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="text-center md:text-right" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-xl font-semibold text-white mb-3">Connect With Us</h3>
+                    <div class="flex justify-center md:justify-end space-x-4 mb-4">
+                        <a href="https://www.facebook.com/profile.php?id=61559191388218" target="_blank" class="text-gray-400 hover:text-orange-400 text-lg" aria-label="Facebook page" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank" class="text-gray-400 hover:text-orange-400 text-lg" aria-label="Twitter page" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/sahajshaktisarvakalyaantrust/" target="_blank" class="text-gray-400 hover:text-orange-400 text-lg" aria-label="Instagram page" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank" class="text-gray-400 hover:text-orange-400 text-lg" aria-label="LinkedIn page" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p class="text-sm">Email: <a href="mailto:Sahajshakti7@gmail.com" class="hover:text-orange-400">Sahajshakti7@gmail.com</a></p>
+                    <p class="text-sm">Phone: +91 9876543210</p>
+                    <form id="newsletterForm" class="mt-4 flex justify-center md:justify-end">
+                        <input type="email" name="newsletter_email" placeholder="Your Email" class="px-4 py-2 rounded-l-lg bg-gray-700 border border-gray-600 text-white text-sm focus:outline-none focus:border-orange-400 w-2/3 md:w-auto" required>
+                        <button type="submit" class="bg-orange-400 hover:bg-orange-500 text-white px-4 py-2 rounded-r-lg text-sm transition-colors duration-300">Subscribe</button>
+                    </form>
+                    <div id="form-feedback-newsletter" class="text-sm mt-2 hidden"></div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-sm">
+                <p>© <span id="currentYear"></span>Sahajshakti Sarvakalyaan Trust. All Rights Reserved. | <a href="privacy.html" class="hover:text-orange-400">Privacy Policy</a> | <a href="terms.html" class="hover:text-orange-400">Terms of Use</a></p>
+                <p>Designed with <i class="fas fa-heart text-red-500"></i> by Rohan & Aman</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="paymentModal" class="payment-modal-overlay">
+        <div class="payment-modal-content">
+            <span class="modal-close-button" id="closeModalButton">×</span>
+            <div class="modal-title">Confirm Your Donation</div>
+            
+            <div class="modal-amount-to-pay" style="margin-bottom: 1.5rem;">
+                Amount: <span id="modalAmountDisplay">₹0</span>
+            </div>
+            
+            <p class="text-sm text-gray-700 mb-4">You will be redirected to Razorpay for a secure payment.</p>
+            <button id="paymentCompleteButton" class="modal-payment-confirm-button">Proceed to Secure Payment</button>
+            <p class="text-xs text-gray-500 mt-4">Click above to initiate payment via Razorpay.</p>
+        </div>
+    </div>
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+
+    <div id="custom-alert-box"></div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="donate.js"></script>
+</body>
+</html>
